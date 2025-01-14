@@ -1,0 +1,126 @@
+.page {
+  width: 100%;
+  height: 100%;
+  background: #FC9D1D;
+  position: relative;
+
+  .container {
+    .rowLogos {
+      padding: 50px 120px;
+    }
+  }
+
+  .imgBg1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media screen and (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  .imgBg2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media screen and (max-width: 1020px) {
+      max-width: 270px;
+      top: -85px;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    img {
+      width: 100%;
+    }
+  }
+
+  .info1 {
+    max-width: 400px;
+
+    h4 {
+      font-size: 33px;
+      text-align: center;
+      font-weight: 900;
+      line-height: 45.08px;
+      color: #561C6D;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 10px;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 27.32px;
+      text-align: center;
+    }
+
+    a {
+      border: none;
+      background: #561C6D;
+      border-radius: 100px;
+      padding: 10px;
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      font-weight: 900;
+      margin-top: 17px;
+      box-shadow: 0 0 10px #561C6D80;
+      text-decoration: none;
+    }
+  }
+
+  .info2 {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+    max-width: 860px;
+  }
+
+  .RowInfoFooter {
+    margin-top: -130px;
+
+    @media screen and (max-width: 1020px) {
+      margin-top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+
+    p,
+    span {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    span {
+      display: block;
+      color: #561C6D;
+      margin-bottom: 40px;
+    }
+
+    .oncaImage {
+      img {
+        width: 110%;
+
+        @media screen and (max-width: 1020px) {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}

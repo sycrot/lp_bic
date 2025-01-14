@@ -1,0 +1,13 @@
+.rowLogos {
+  padding: 50px 120px;
+
+  @media screen and (max-width: 1020px) {
+    padding: 50px 20px;
+
+    img {
+      max-width: 138px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

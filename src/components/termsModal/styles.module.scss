@@ -1,0 +1,70 @@
+.termsModal {
+  :global(.modal-dialog) {
+    max-width: 610px;
+  }
+
+  :global(.modal-content) {
+    padding: 40px;
+
+    @media screen and (max-width: 1020px) {
+      padding: 20px;
+    }
+  }
+
+  :global(.btn-close) {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-image: url(../../assets/images/icons/close.svg);
+    background-size: 100%;
+    opacity: .8;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  :global(.modal-header) {
+    color: #561C6D;
+    font-weight: 700;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  :global(.modal-body) {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70vh;
+    padding: 0;
+    padding-right: 25px;
+
+    @media screen and (max-width: 1020px) {
+      height: 76vh;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #561C6D1A;
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #561C6D;
+      border-radius: 20px;
+    }
+
+    p {
+      font-family: "Roboto", serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 17.58px;
+    }
+  }
+}
