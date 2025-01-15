@@ -110,9 +110,9 @@ export default function Form() {
             </div>
             <div className="col-12">
               <div className={styles.input}>
-                {formik.touched.nome && formik.errors.nome &&
+                {/* {formik.touched.nome && formik.errors.nome &&
                   <span className={styles.error}>{formik.errors.nome}</span>
-                }
+                } */}
                 <input
                   type="text"
                   value={formik.values.nome}
@@ -121,14 +121,15 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="Nome completo*"
                   className={`${formik.touched.nome && formik.errors.nome ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-6 mt-3">
               <div className={styles.input}>
-                {formik.touched.cpf && formik.errors.cpf &&
+                {/* {formik.touched.cpf && formik.errors.cpf &&
                   <span className={styles.error}>{formik.errors.cpf}</span>
-                }
+                } */}
                 <Cleave
                   options={{
                     blocks: [3, 3, 3, 2],
@@ -142,20 +143,22 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="CPF*"
                   className={`${formik.touched.cpf && formik.errors.cpf ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-6 mt-3">
               <div className={styles.input}>
-                {formik.touched.dataNascimento && formik.errors.dataNascimento &&
+                {/* {formik.touched.dataNascimento && formik.errors.dataNascimento &&
                   <span className={styles.error}>{formik.errors.dataNascimento}</span>
-                }
+                } */}
                 <DatePicker
                   selected={formik.values.dataNascimento ? new Date(formik.values.dataNascimento) : null}
                   onChange={(date) => formik.setFieldValue('dataNascimento', date)}
                   onBlur={formik.handleBlur}
                   name="dataNascimento"
                   placeholderText='Data de nascimento*'
+                  required
                 />
                 {/* <input
                   type="text"
@@ -173,9 +176,9 @@ export default function Form() {
             </div>
             <div className="col-12">
               <div className={styles.input}>
-                {formik.touched.cep && formik.errors.cep &&
+                {/* {formik.touched.cep && formik.errors.cep &&
                   <span className={styles.error}>{formik.errors.cep}</span>
-                }
+                } */}
                 <Cleave
                   options={{
                     blocks: [5, 3],
@@ -189,14 +192,15 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="CEP*"
                   className={`${formik.touched.cep && formik.errors.cep ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-8 mt-3">
               <div className={styles.input}>
-                {formik.touched.logradouro && formik.errors.logradouro &&
+                {/* {formik.touched.logradouro && formik.errors.logradouro &&
                   <span className={styles.error}>{formik.errors.logradouro}</span>
-                }
+                } */}
                 <input
                   type="text"
                   value={formik.values.logradouro}
@@ -205,14 +209,15 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="Logradouro*"
                   className={`${formik.touched.logradouro && formik.errors.logradouro ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-4 mt-3">
               <div className={styles.input}>
-                {formik.touched.numero && formik.errors.numero &&
+                {/* {formik.touched.numero && formik.errors.numero &&
                   <span className={styles.error}>{formik.errors.numero}</span>
-                }
+                } */}
                 <Cleave
                   options={{
                     numericOnly: true
@@ -224,6 +229,7 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="Número*"
                   className={`${formik.touched.numero && formik.errors.numero ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
@@ -241,9 +247,9 @@ export default function Form() {
             </div>
             <div className="col-12 col-md-3 mt-3">
               <div className={styles.input}>
-                {formik.touched.bairro && formik.errors.bairro &&
+                {/* {formik.touched.bairro && formik.errors.bairro &&
                   <span className={styles.error}>{formik.errors.bairro}</span>
-                }
+                } */}
                 <input
                   type="text"
                   value={formik.values.bairro}
@@ -252,14 +258,15 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="Bairro*"
                   className={`${formik.touched.bairro && formik.errors.bairro ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-3 mt-3">
               <div className={styles.input}>
-                {formik.touched.cidade && formik.errors.cidade &&
+                {/* {formik.touched.cidade && formik.errors.cidade &&
                   <span className={styles.error}>{formik.errors.cidade}</span>
-                }
+                } */}
                 <input
                   type="text"
                   value={formik.values.cidade}
@@ -268,20 +275,22 @@ export default function Form() {
                   onBlur={formik.handleBlur}
                   placeholder="Cidade*"
                   className={`${formik.touched.cidade && formik.errors.cidade ? styles.errorInput : ''}`}
+                  required
                 />
               </div>
             </div>
             <div className="col-12 col-md-3 mt-3">
               <div className={styles.input}>
-                {formik.touched.estado && formik.errors.estado &&
+                {/* {formik.touched.estado && formik.errors.estado &&
                   <span className={styles.error}>{formik.errors.estado}</span>
-                }
+                } */}
                 <select
                   value={formik.values.estado}
                   name="estado"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   className={`${formik.touched.estado && formik.errors.estado ? styles.errorInput : ''}`}
+                  required
                 >
                   <option value="" label="Estado*" />
                   {estados.map((estado) => (
