@@ -2,9 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Panel1 from '../assets/images/panel-1.svg';
 import ImgBg2 from '../assets/images/bg_img-2.svg';
-import Collection1 from '../assets/images/Collection_1.svg';
-import Collection2 from '../assets/images/collection_2.svg';
-import ImagesInfo from '../assets/images/ImageInfos.svg';
+import Collection1 from '../assets/images/collection_1.png';
+import Collection2 from '../assets/images/collection_2.png';
+import ImagesInfo from '../assets/images/ImageInfos.png';
 import OncaBic from '../assets/images/BIC_BIENAL_SP_ESPACO_KIDS_ONCA.svg';
 import Header from "@/components/header";
 
@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className={`row align-items-center`}>
           <div className="col-12 col-md-6 d-flex justify-content-end px-5 px-md-0 mb-4 mb-md-0">
-            <Image src={Collection1} alt="Collection" quality={100} style={{ height: 'auto' }} />
+            <Image src={Collection1} className={styles.imageCollection1} alt="Collection" quality={100} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className={`col-12 col-md-6 d-flex flex-column justify-content-start ${styles.info1}`}>
             <h4>Conheça os novos lápis de madeira BIC Kids.</h4>
