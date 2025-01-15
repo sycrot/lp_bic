@@ -5,6 +5,7 @@
 
   :global(.modal-content) {
     padding: 40px;
+    border-radius: 20px;
 
     @media screen and (max-width: 1020px) {
       padding: 30px;

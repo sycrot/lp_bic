@@ -17,8 +17,8 @@ export default function Home() {
         <Header />
 
         <div className={`row align-items-center`}>
-          <div className="col-12 col-md-6 d-flex justify-content-end">
-            <Image src={Collection1} alt="Collection" />
+          <div className="col-12 col-md-6 d-flex justify-content-end px-5 px-md-0 mb-4 mb-md-0">
+            <Image src={Collection1} alt="Collection" quality={100} style={{ height: 'auto' }} />
           </div>
           <div className={`col-12 col-md-6 d-flex flex-column justify-content-start ${styles.info1}`}>
             <h4>Conheça os novos lápis de madeira BIC Kids.</h4>
@@ -33,16 +33,16 @@ export default function Home() {
         </div>
 
         <div className={`row ${styles.RowInfoFooter}`}>
-          <div className="col-12 col-md-4 d-flex align-items-center p-0+">
+          <div className="col-12 col-md-4 d-flex align-items-center">
             <Image src={Collection2} alt="Collection 2" />
           </div>
-          <div className="col-12 col-md-4 d-flex flex-column justify-content-end p-0">
+          <div className="col-12 col-md-4 d-flex flex-column justify-content-end">
             <Image src={ImagesInfo} alt="Info" />
             <p>Entre em contato conosco pelo e-mail:</p>
             <span>faleconosco@criandouau.bickids.com.br</span>
           </div>
           <div className={`col-12 col-md-4 p-0 ${styles.oncaImage}`}>
-            <Image src={OncaBic} alt="Onca" />
+            <Image src={OncaBic} alt="Onca" layout="responsive" />
           </div>
         </div>
       </div>

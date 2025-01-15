@@ -12,6 +12,8 @@ import { useFormik } from 'formik';
 import DatePicker from 'react-datepicker';
 import TermsModal from '@/components/termsModal';
 import RegistrationCompletedModal from '@/components/registrationCompletedModal';
+import Cleave from 'cleave.js/react';
+
 
 const estados = [
   { nome: "Acre", sigla: "AC" },
@@ -88,7 +90,7 @@ export default function Form() {
       handleShowRegistrationCompleted();
       formik.resetForm();
     }
-  })
+  });
 
   return (
     <div className={styles.Form}>
@@ -127,7 +129,12 @@ export default function Form() {
                 {formik.touched.cpf && formik.errors.cpf &&
                   <span className={styles.error}>{formik.errors.cpf}</span>
                 }
-                <input
+                <Cleave
+                  options={{
+                    blocks: [3, 3, 3, 2],
+                    delimiters: ['.', '.', '-'],
+                    numericOnly: true
+                  }}
                   type="text"
                   value={formik.values.cpf}
                   name="cpf"
@@ -169,7 +176,12 @@ export default function Form() {
                 {formik.touched.cep && formik.errors.cep &&
                   <span className={styles.error}>{formik.errors.cep}</span>
                 }
-                <input
+                <Cleave
+                  options={{
+                    blocks: [5, 3],
+                    delimiters: ['-'],
+                    numericOnly: true
+                  }}
                   type="text"
                   value={formik.values.cep}
                   name="cep"
@@ -201,7 +213,10 @@ export default function Form() {
                 {formik.touched.numero && formik.errors.numero &&
                   <span className={styles.error}>{formik.errors.numero}</span>
                 }
-                <input
+                <Cleave
+                  options={{
+                    numericOnly: true
+                  }}
                   type="text"
                   value={formik.values.numero}
                   name="numero"
