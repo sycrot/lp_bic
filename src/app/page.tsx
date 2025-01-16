@@ -35,7 +35,7 @@ export default function Home() {
         <div className={`row ${styles.RowInfoFooter}`}>
           <div className="col-12 col-md-4 d-flex align-items-center flex-column flex-md-row mt-4 mt-md-0 px-0">
             <Image src={Collection2} alt="Collection 2" />
-            <p className={`text-center d-md-none ${styles.info2}`}>
+            <p className={`text-center d-md-none ${styles.info2} px-3`}>
               Mergulhe em nossas aventuras coloridas e divertidas com os Lápis de Cor Premium BIC Kids, produto especialmente desenvolvido para o conforto e segurança das crianças.
             </p>
           </div>
