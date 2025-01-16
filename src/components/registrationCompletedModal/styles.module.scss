@@ -40,10 +40,15 @@
       margin: 0;
       width: 100%;
       line-height: 38px;
+      margin-left: 20px;
     }
 
     @media screen and (max-width: 1020px) {
       align-items: start;
+
+      p {
+        margin-left: 0;
+      }
     }
   }
 

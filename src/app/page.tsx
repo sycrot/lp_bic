@@ -17,7 +17,7 @@ export default function Home() {
         <Header />
 
         <div className={`row align-items-center`}>
-          <div className="col-12 col-md-6 d-flex justify-content-end px-5 px-md-0 mb-4 mb-md-0">
+          <div className="col-12 col-md-6 d-flex justify-content-end px-5 px-md-0 mb-4 mb-md-0 pe-md-3">
             <Image src={Collection1} className={styles.imageCollection1} alt="Collection" quality={100} style={{ width: '100%', height: 'auto' }} />
           </div>
           <div className={`col-12 col-md-6 d-flex flex-column justify-content-start ${styles.info1}`}>
@@ -25,7 +25,7 @@ export default function Home() {
             <p>Faça o cadastro e receba um kit especial, com 2uni de lápis de cor e um marca páginas para você colorir.</p>
             <a href="/form">CLIQUE E PARTICIPE</a>
           </div>
-          <div className="col-12 d-flex justify-content-center">
+          <div className="col-12 d-none d-none d-md-flex justify-content-center">
             <p className={`text-center ${styles.info2}`}>
               Mergulhe em nossas aventuras coloridas e divertidas com os Lápis de Cor Premium BIC Kids, produto especialmente desenvolvido para o conforto e segurança das crianças.
             </p>
@@ -33,8 +33,11 @@ export default function Home() {
         </div>
 
         <div className={`row ${styles.RowInfoFooter}`}>
-          <div className="col-12 col-md-4 d-flex align-items-center">
+          <div className="col-12 col-md-4 d-flex align-items-center flex-column flex-md-row mt-4 mt-md-0 px-0">
             <Image src={Collection2} alt="Collection 2" />
+            <p className={`text-center d-md-none ${styles.info2}`}>
+              Mergulhe em nossas aventuras coloridas e divertidas com os Lápis de Cor Premium BIC Kids, produto especialmente desenvolvido para o conforto e segurança das crianças.
+            </p>
           </div>
           <div className="col-12 col-md-4 d-flex flex-column justify-content-end">
             <Image src={ImagesInfo} alt="Info" />
